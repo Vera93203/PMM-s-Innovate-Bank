@@ -131,9 +131,9 @@ img {
 }
 
 .nav__logo {
-  margin-top: 100px;
+  margin-top: 50px;
  /* Set margin-left to 0 to keep the logo near the left margin */
-  height: 150px;
+  height: 180px;
   width: 180px;
   transition: all 0.3s;
   background-color: grey; /* Add this line to set the background color to grey */
@@ -738,7 +738,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 300px) {
   /* Adjustments for phones */
   body {
     font-size: 50%;
@@ -753,16 +753,17 @@ h4 {
   }
 
   .nav__links {
-    top: 7.5rem;
+    top: 1.5rem;
   }
 
   .nav__links {
-    top: 7.5rem;
+    top: 1.5rem;
   }
 
   .nav__logo {
-    margin-top: 0;
-    height: 120px;
+    margin-top: 0px;
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    max-height: 200px; /* Set a max-height to avoid excessive stretching */
     width: 150px;
   }
 
