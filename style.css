@@ -131,12 +131,14 @@ img {
 }
 
 .nav__logo {
-  margin-top: 100px;
+  margin-top: auto;
+ /* Set margin-left to 0 to keep the logo near the left margin */
   height: 150px;
   width: 180px;
   transition: all 0.3s;
   background-color: grey; /* Add this line to set the background color to grey */
 }
+
 
 
 .nav__links {
@@ -675,4 +677,151 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablets */
+  body {
+    font-size: 55%;
+  }
+
+  .section {
+    padding: 10rem 1.5rem;
+  }
+
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav.sticky .nav__links {
+    display: flex;
+  }
+
+  .nav__item {
+    margin: 0;
+    text-align: center;
+  }
+
+  .slider {
+    height: 30rem;
+  }
+
+  .dots {
+    bottom: 2%;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__item {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .modal {
+    max-width: 100%;
+    margin: 2rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for phones */
+  body {
+    font-size: 50%;
+  }
+
+  .section {
+    padding: 8rem 1rem;
+  }
+
+  .nav {
+    padding: 0 1rem;
+  }
+
+  .nav__links {
+    top: 7.5rem;
+  }
+
+  .nav__links {
+    top: 7.5rem;
+  }
+
+  .nav__logo {
+    margin-top: 0;
+    height: 120px;
+    width: 150px;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+  }
+
+  .header__img {
+    grid-column: 1 / 2;
+    grid-row: 2 / span 2;
+    transform: translateY(0);
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+
+  .operations {
+    margin: 6rem 1rem 0 1rem;
+  }
+
+  .operations__tab-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .operations__tab {
+    margin-bottom: 1rem;
+    transform: translateY(0);
+  }
+
+  .operations__content {
+    padding: 2.5rem;
+  }
+
+  .operations__content--active {
+    grid-template-columns: 1fr;
+  }
+
+  .slider {
+    height: 25rem;
+  }
+
+  .dots {
+    bottom: 1%;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .section--sign-up .btn {
+    font-size: 1.7rem;
+    padding: 1.5rem 4rem;
+  }
+
+  .footer__logo {
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
 }
