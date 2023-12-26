@@ -131,12 +131,11 @@ img {
 }
 
 .nav__logo {
-  margin-top: 50px;
+  
  /* Set margin-left to 0 to keep the logo near the left margin */
-  height: 180px;
-  width: 180px;
-  transition: all 0.3s;
-  background-color: grey; /* Add this line to set the background color to grey */
+  
+  margin-top: auto;
+   /* Add this line to set the background color to grey */
 }
 
 
@@ -761,10 +760,8 @@ h4 {
   }
 
   .nav__logo {
-    margin-top: 0px;
-    height: auto; /* Set height to auto to maintain aspect ratio */
-    max-height: 200px; /* Set a max-height to avoid excessive stretching */
-    width: 150px;
+    margin-top: 50px;
+    
   }
 
   .header__title {
